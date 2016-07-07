@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://crucore.com/apihost/css/style.css">
+    <title>Login app template</title>
+
+    <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+    <script type="text/javascript">
+        window.cookieconsent_options = {"message":"This website uses cookies to ensure you get the best experience on our website","dismiss":"Got it!","learnMore":"More info","link":null,"theme":"dark-top"};
+    </script>
+
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+    <!-- End Cookie Consent plugin -->
+
+</head>
+<body>
+<div ng-controller="MainController as main">
+    <div ng-include="'views/header/header.view.html'"></div>
+    <div class="container">
+        <div class="col-md-8 col-md-offset-2" ng-view></div>
+    </div>
+</div>
+<!--library-->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.6/ngStorage.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.3.3/ui-bootstrap-tpls.min.js"></script>
+<script src="https://crucore.com/apihost/library/angular-ui-validate.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
+<!--Angular-->
+<script src="https://crucore.com/apihost/app.js"></script>
+<!--controller-->
+<script src="https://crucore.com/apihost/controller/main.controller.js"></script>
+<script src="https://crucore.com/apihost/controller/login.controller.js"></script>
+<script src="https://crucore.com/apihost/controller/redirect.controller.js"></script>
+<script src="https://crucore.com/apihost/controller/dashboard.controller.js"></script>
+<!--service-->
+<script src="https://crucore.com/apihost/service/user.service.client.js"></script>
+<script src="https://crucore.com/apihost/service/auth.service.client.js"></script>
+<!--directive-->
+<script src="https://crucore.com/apihost/directive/directives.client.js"></script>
+<!--special config-->
+<script src="config.js"></script>
+
+</body>
+</html>
