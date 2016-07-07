@@ -1,0 +1,31 @@
+
+File structure: 
+
+index.html
+//load Bootstrap, Angular, AngularUI and other libraries (js & css files) form CDN links
+views/
+	login.view.html
+	redirect.view.html
+	header.view.html
+	dashboard.view.html
+
+app.js     —-> initialize an Angular app called “myApp”
+config.js  ——> This is a unique file for different websites since the ng-view routes are different. If you need to add page and controller, add them here in the $routeProvider and make sure you have HTML partial file in the views folder and add controller.js link in the index.html. 
+
+//controller files
+main.controller.js  —> This is the top level controller for the whole page. I use this controller to control the header, footer and it contains some functions that can be used in different pages. 
+login.controller.js
+redirect.controller.js  —> redirect the page to the dashboard page. If you need to go to other page, you need to change the link in this file.
+dashboard.controller.js —>This file may be different based on different use case/situation. 
+**other controller for new pages**
+
+//services files
+user.service.client.js —> Those two files are used for log in authentication, get/save/delete token from session storage, save/delete/update remember-me cookie
+auth.service.client.js
+**other service if needed** 
+
+//customized directives
+directives.client.js
+**other directives if needed** 
+
+
