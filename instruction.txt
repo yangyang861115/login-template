@@ -17,7 +17,7 @@ main.controller.js  —> This is the top level controller for the whole page. I 
 login.controller.js
 redirect.controller.js  —> redirect the page to the dashboard page. If you need to go to other page, you need to change the link in this file.
 dashboard.controller.js —>This file may be different based on different use case/situation. 
-**other controller for new pages**
+**other controller for new pages**  
 
 //services files
 user.service.client.js —> Those two files are used for log in authentication, get/save/delete token from session storage, save/delete/update remember-me cookie
